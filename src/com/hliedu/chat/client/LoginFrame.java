@@ -65,7 +65,7 @@ public class LoginFrame extends JFrame {
 		lblBackground.add(lblUid);
 		
 		//账号文本框
-		JTextField textUid = new JTextField();
+		final JTextField textUid = new JTextField();
 		//设置文本框的位置、大小
 		textUid.setBounds(150, 40, 160, 30);
 		lblBackground.add(textUid);
@@ -81,7 +81,7 @@ public class LoginFrame extends JFrame {
 		lblBackground.add(lblPsw);
 		
 		//创建一个密码框，用于输入用户密码
-		JPasswordField textPsw = new JPasswordField();
+		final JPasswordField textPsw = new JPasswordField();
 		//设置密码框的位置、大小
 		textPsw.setBounds(150, 80, 160, 30);
 		lblBackground.add(textPsw);
@@ -93,7 +93,7 @@ public class LoginFrame extends JFrame {
 		enter.setBounds(110, 170, 80, 25);
 		enter.addActionListener(new ActionListener() {
 			
-			@Override
+//			@Override
 			public void actionPerformed(ActionEvent e) {
 				String userName = textUid.getText();
 				String password = textPsw.getText();
