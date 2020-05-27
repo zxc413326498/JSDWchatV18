@@ -306,7 +306,7 @@ public class ChatFrame extends JFrame {
 				String reciver = "All";
 				//我们要获取到，当前要发送给谁？
 				Object reciverObj = reciverBox.getSelectedItem();
-				if(reciverObj != null) {
+				if(reciverObj != null && reciverObj != "All") {
 					reciver = String.valueOf(reciverObj);
 					//文件发送框
 					FileSendFrame fileSendFrame = new FileSendFrame(socket , reciver , userName);
